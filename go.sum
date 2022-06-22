@@ -4,3 +4,7 @@ github.com/anon55555/mt v0.0.0-20210919124550-bcc58cb3048f h1:tZU8VPYLyRrG3Lj9zB
 github.com/anon55555/mt v0.0.0-20210919124550-bcc58cb3048f/go.mod h1:jH4ER+ahjl7H6TczzK+q4V9sXY++U2Geh6/vt3r4Xvs=
 github.com/ev2-1/mt-multiserver-playertools v0.0.0-20220619103524-47cbe80e9f54 h1:gjysMsa63YX8OPbJF+ghqZpzy+sC9XvZ10iEy95fcOA=
 github.com/ev2-1/mt-multiserver-playertools v0.0.0-20220619103524-47cbe80e9f54/go.mod h1:anLdfp0kd+W5McRdXBCwaEdtZsCwk9u9asA9rbgac1U=
+golang.org/x/sys v0.0.0-20211019181941-9d821ace8654 h1:id054HUawV2/6IGm2IV8KZQjqtwAOo2CYlOToYqa0d0=
+golang.org/x/sys v0.0.0-20211019181941-9d821ace8654/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/tools v0.1.11 h1:loJ25fNOEhSXfHrpoGj91eCUThwdNX6u24rO1xnNteY=
+golang.org/x/tools v0.1.11/go.mod h1:SgwaegtQh8clINPpECJMqnxLv9I09HLqnW3RMqW0CA4=
