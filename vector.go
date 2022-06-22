@@ -19,7 +19,7 @@ func Pos2vec(p mt.Pos) (v Vec) {
 	return
 }
 
-func vecSub(a, b Vec) (v Vec) {
+func VecSub(a, b Vec) (v Vec) {
 	for k := range v {
 		v[k] = a[k] - b[k]
 	}
@@ -27,11 +27,11 @@ func vecSub(a, b Vec) (v Vec) {
 	return
 }
 
-func vecLen2d(v Vec) float64 {
+func VecLen2d(v Vec) float64 {
 	return math.Sqrt(v[0]*v[0] + v[2]*v[2])
 }
 
-func vecAdd(a, b Vec) (v Vec) {
+func VecAdd(a, b Vec) (v Vec) {
 	for k := range v {
 		v[k] = a[k] + b[k]
 	}

@@ -66,8 +66,8 @@ func Example() (add []mt.IDAOMsg) {
 // RotateAroundAxis3a gets Position rotated `point` around `axis` based on angles
 // angles is 0:XY; 1:XZ; 2:YZ
 func RotateAroundAxis3a(point, axis, angles Vec) Vec {
-	relPos := vecSub(axis, point)
-	length := vecLen2d(relPos)
+	relPos := VecSub(axis, point)
+	length := VecLen2d(relPos)
 
 	// XY - plane
 	relPos[Y] += math.Sin(angles[0]*(math.Pi/180)) * length
@@ -81,7 +81,7 @@ func RotateAroundAxis3a(point, axis, angles Vec) Vec {
 	relPos[Y] += math.Sin(angles[2]*(math.Pi/180)) * length
 	relPos[Z] += math.Cos(angles[2]*(math.Pi/180)) * length
 
-	return vecAdd(relPos, point)
+	return VecAdd(relPos, point)
 }
 
 // ShiftAngle shifts `relPos` relative to `pos`
@@ -102,8 +102,8 @@ func ShiftAngle(pos, relPos Vec, angle float64) Vec {
 // RotateAroundAxis2a rotates around `point` singe `axis` on XZ plane, Y axis is ignored
 // `angle` specifie angle to XY plane (or YZ idk)
 func RotateAroundAxis2a(point, axis Vec, angle float64) Vec {
-	relPos := vecSub(axis, point)
-	length := vecLen2d(relPos)
+	relPos := VecSub(axis, point)
+	length := VecLen2d(relPos)
 
 	cos := math.Cos(angle * (math.Pi / 180))
 	sin := math.Sin(angle * (math.Pi / 180))
@@ -111,5 +111,5 @@ func RotateAroundAxis2a(point, axis Vec, angle float64) Vec {
 	relPos[0] += sin * length
 	relPos[2] += cos * length
 
-	return vecAdd(relPos, point)
+	return VecAdd(relPos, point)
 }
